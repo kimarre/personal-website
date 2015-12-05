@@ -1,0 +1,53 @@
+body {
+   margin: 0;
+   widht: 100vh;
+}
+
+.content {
+   display: flex;
+   flex-direction: row;
+}
+
+.background {
+
+}
+.background-image {
+   position: fixed;
+   width: 100%;
+   z-index: -100;
+}
+
+.dark-overlay {
+   position: absolute;
+   height: 100vh;
+   left: 0;
+   right: 0;
+   background-color: black;
+   opacity: .7;
+   z-index: -99;
+}
+
+.side-panel {
+   display: flex;
+   flex-direction: column;
+
+   border: 5px goldenrod solid;
+   color: white;
+   height: 100vh;
+}
+
+.right {
+   flex: 2;
+}
+
+.left {
+   align-items: center; /* Horizontally center */
+   flex: 1;
+
+   img {
+      border: 3px white solid;
+      border-radius: 50%;
+      width: 110px;
+   }
+}
+
